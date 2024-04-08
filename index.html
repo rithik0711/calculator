@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <center>
+        <h1>Calculator</h1>
+        <div class="box">
+            <!-- Number buttons inside the box -->
+            <div class="number-buttons">
+                <center>
+                    <div class="line"></div>   
+                    <div class="num1"><button>1</button></div>
+                    <div class="num2"><button>2</button></div>
+                    <div class="num3"><button>3</button></div>
+                    <div class="num4"><button>4</button></div>
+                    <div class="num5"><button>5</button></div>
+                    <div class="num6"><button>6</button></div>
+                    <div class="num7"><button>7</button></div>
+                    <div class="num8"><button>8</button></div>
+                    <div class="num9"><button>9</button></div>
+                    <div class="num0"><button>0</button></div>
+                    <div class="num10"><button>.</button></div>
+                    <div class="add"><button>+</button></div>
+                    <div class="sub"><button>-</button></div>
+                    <div class="mul"><button>*</button></div>
+                    <div class="div"><button>/</button></div>
+                    <div class="clr"><button>C</button></div>
+                    <div class="per"><button>%</button></div>
+                    <div class="hash"><button>#</button></div>
+                    <div class="del"><button>D</button></div>
+                </center>
+            </div>
+            <!-- "=" button inside the box -->
+            <div class="equal">
+                <h3><button>=</button></h3>
+            </div>
+        </div>
+    </center>
+
+    <script>
+        const display = document.querySelector('.box');
+
+        // Add event listener for all buttons
+        display.addEventListener('click', event => {
+            if (event.target.tagName === 'BUTTON') {
+                const buttonValue = event.target.textContent;
+                handleButton(buttonValue);
+            }
+        });
+
+        let currentInput = '';
+
+        function handleButton(value) {
+            switch (value) {
+                case 'C':
+                    clear();
+                    break;
+                case '=':
+                    calculate();
+                    break;
+                case 'D':
+                    deleteLast();
+                    break;
+                default:
+                    currentInput += value;
+                    displayInput(currentInput);
+                    break;
+            }
+        }
+
+        function clear() {
+            currentInput = '';
+            displayInput(currentInput);
+        }
+
+        function deleteLast() {
+            currentInput = currentInput.slice(0, -1);
+            displayInput(currentInput);
+        }
+
+        function calculate() {
+            try {
+                const result = eval(currentInput);
+                displayInput(result);
+                currentInput = String(result);
+            } catch (error) {
+                displayInput('Error');
+                currentInput = '';
+            }
+        }
+
+        function displayInput(value) {
+            display.querySelector('.equal button').textContent = value;
+        }
+    </script>
+</body>
+</html>

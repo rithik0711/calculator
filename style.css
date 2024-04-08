@@ -1,0 +1,468 @@
+body {
+    background-color: rgba(0, 0, 255, 0.5);
+
+}
+.line{
+    width: 350px;
+    height:5px;
+    background-color: blue;
+    margin-top: 140px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.box {
+    width: 350px;
+    height: 600px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+    border: 10px solid blueviolet;
+    position: relative; /* Add position relative to the box */
+}
+
+.equal {
+    position: absolute;
+    bottom: 5px; /* Adjust the distance from the bottom */
+    left: 87%; /* Align to the center horizontally */
+    transform: translateX(-50%); /* Move it back by half of its own width */
+    width: 80px;
+    height: 80px;
+    border-radius: 80px;
+    background-color: rgb(164, 33, 197);
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.equal button {
+    background: none;
+    border: none;
+    color: white;
+    font-size: inherit;
+    cursor: pointer;
+    padding: 0;
+    
+}
+.num1{
+    position: absolute;
+    bottom: 86px; /* Adjust the distance from the bottom */
+    left: 14%; /* Align to the center horizontally */
+    transform: translateX(-50%); /* Move it back by half of its own width */
+    width: 80px;
+    height: 80px;
+    border-radius: 80px;
+    background-color: rgb(164, 33, 197);
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.num1 button {
+    background: none;
+    border: none;
+    color: white;
+    font-size: inherit;
+    cursor: pointer;
+    padding: 0;
+}
+.num2{
+    position: absolute;
+    bottom: 86px; /* Adjust the distance from the bottom */
+    left: 38%; /* Align to the center horizontally */
+    transform: translateX(-50%); /* Move it back by half of its own width */
+    width: 80px;
+    height: 80px;
+    border-radius: 80px;
+    background-color: rgb(164, 33, 197);
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.num2 button {
+    background: none;
+    border: none;
+    color: white;
+    font-size: inherit;
+    cursor: pointer;
+    padding: 0;
+}
+.num3{
+    position: absolute;
+    bottom: 86px; /* Adjust the distance from the bottom */
+    left: 62%; /* Align to the center horizontally */
+    transform: translateX(-50%); /* Move it back by half of its own width */
+    width: 80px;
+    height: 80px;
+    border-radius: 80px;
+    background-color: rgb(164, 33, 197);
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.num3 button {
+    background: none;
+    border: none;
+    color: white;
+    font-size: inherit;
+    cursor: pointer;
+    padding: 0;
+}
+.num4{
+    position: absolute;
+    bottom: 172px; /* Adjust the distance from the bottom */
+    left: 14%; /* Align to the center horizontally */
+    transform: translateX(-50%); /* Move it back by half of its own width */
+    width: 80px;
+    height: 80px;
+    border-radius: 80px;
+    background-color: rgb(164, 33, 197);
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.num4 button {
+    background: none;
+    border: none;
+    color: white;
+    font-size: inherit;
+    cursor: pointer;
+    padding: 0;
+}
+.num5{
+    position: absolute;
+    bottom: 172px; /* Adjust the distance from the bottom */
+    left: 38%; /* Align to the center horizontally */
+    transform: translateX(-50%); /* Move it back by half of its own width */
+    width: 80px;
+    height: 80px;
+    border-radius: 80px;
+    background-color:rgb(164, 33, 197);
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.num5 button {
+    background: none;
+    border: none;
+    color: white;
+    font-size: inherit;
+    cursor: pointer;
+    padding: 0;
+}
+.num6{
+    position: absolute;
+    bottom: 172px; /* Adjust the distance from the bottom */
+    left: 62%; /* Align to the center horizontally */
+    transform: translateX(-50%); /* Move it back by half of its own width */
+    width: 80px;
+    height: 80px;
+    border-radius: 80px;
+    background-color: rgb(164, 33, 197);
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.num6 button {
+    background: none;
+    border: none;
+    color: white;
+    font-size: inherit;
+    cursor: pointer;
+    padding: 0;
+}
+.num7{
+    position: absolute;
+    bottom: 260px; /* Adjust the distance from the bottom */
+    left: 14%; /* Align to the center horizontally */
+    transform: translateX(-50%); /* Move it back by half of its own width */
+    width: 80px;
+    height: 80px;
+    border-radius: 80px;
+    background-color: rgb(164, 33, 197);
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.num7 button {
+    background: none;
+    border: none;
+    color: white;
+    font-size: inherit;
+    cursor: pointer;
+    padding: 0;
+}
+.num8{
+    position: absolute;
+    bottom: 260px; /* Adjust the distance from the bottom */
+    left: 38%; /* Align to the center horizontally */
+    transform: translateX(-50%); /* Move it back by half of its own width */
+    width: 80px;
+    height: 80px;
+    border-radius: 80px;
+    background-color: rgb(164, 33, 197);
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.num8 button {
+    background: none;
+    border: none;
+    color: white;
+    font-size: inherit;
+    cursor: pointer;
+    padding: 0;
+}
+.num9{
+    position: absolute;
+    bottom: 260px; /* Adjust the distance from the bottom */
+    left: 62%; /* Align to the center horizontally */
+    transform: translateX(-50%); /* Move it back by half of its own width */
+    width: 80px;
+    height: 80px;
+    border-radius: 80px;
+    background-color: rgb(164, 33, 197);
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.num9 button {
+    background: none;
+    border: none;
+    color: white;
+    font-size: inherit;
+    cursor: pointer;
+    padding: 0;
+}
+.num0{
+    position: absolute;
+    bottom: 5px; /* Adjust the distance from the bottom */
+    left: 38%; /* Align to the center horizontally */
+    transform: translateX(-50%); /* Move it back by half of its own width */
+    width: 80px;
+    height: 80px;
+    border-radius: 80px;
+    background-color: rgb(164, 33, 197);
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.num0 button {
+    background: none;
+    border: none;
+    color: white;
+    font-size: inherit;
+    cursor: pointer;
+    padding: 0;
+}
+.num10{
+    position: absolute;
+    bottom: 5px; /* Adjust the distance from the bottom */
+    left: 62%; /* Align to the center horizontally */
+    transform: translateX(-50%); /* Move it back by half of its own width */
+    width: 80px;
+    height: 80px;
+    border-radius: 80px;
+    background-color: rgb(164, 33, 197);
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.num10 button {
+    background: none;
+    border: none;
+    color: white;
+    font-size: inherit;
+    cursor: pointer;
+    padding: 0;
+}
+.add {
+    position: absolute;
+    bottom: 86px; /* Adjust the distance from the bottom */
+    left: 87%; /* Align to the center horizontally */
+    transform: translateX(-50%); /* Move it back by half of its own width */
+    width: 80px;
+    height: 80px;
+    border-radius: 80px;
+    background-color: rgb(164, 33, 197);
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.add button {
+    background: none;
+    border: none;
+    color: white;
+    font-size: inherit;
+    cursor: pointer;
+    padding: 0;
+    
+}
+.sub{
+    position: absolute;
+    bottom: 172px; /* Adjust the distance from the bottom */
+    left: 87%; /* Align to the center horizontally */
+    transform: translateX(-50%); /* Move it back by half of its own width */
+    width: 80px;
+    height: 80px;
+    border-radius: 80px;
+    background-color: rgb(164, 33, 197);
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.sub button {
+    background: none;
+    border: none;
+    color: white;
+    font-size: inherit;
+    cursor: pointer;
+    padding: 0;
+}
+.mul{
+    position: absolute;
+    bottom: 260px; /* Adjust the distance from the bottom */
+    left: 87%; /* Align to the center horizontally */
+    transform: translateX(-50%); /* Move it back by half of its own width */
+    width: 80px;
+    height: 80px;
+    border-radius: 80px;
+    background-color: rgb(164, 33, 197);
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.mul button {
+    background: none;
+    border: none;
+    color: white;
+    font-size: inherit;
+    cursor: pointer;
+    padding: 0;
+}
+.div{
+    position: absolute;
+    bottom: 360px; /* Adjust the distance from the bottom */
+    left: 87%; /* Align to the center horizontally */
+    transform: translateX(-50%); /* Move it back by half of its own width */
+    width: 80px;
+    height: 80px;
+    border-radius: 80px;
+    background-color: rgb(164, 33, 197);
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.div button{
+    background: none;
+    border: none;
+    color: white;
+    font-size: inherit;
+    cursor: pointer;
+    padding: 0;
+}
+.clr{
+    position: absolute;
+    bottom: 360px; /* Adjust the distance from the bottom */
+    left: 14%; /* Align to the center horizontally */
+    transform: translateX(-50%); /* Move it back by half of its own width */
+    width: 80px;
+    height: 80px;
+    border-radius: 80px;
+    background-color: rgb(164, 33, 197);
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.clr button {
+    background: none;
+    border: none;
+    color: white;
+    font-size: inherit;
+    cursor: pointer;
+    padding: 0;
+}
+.per{
+    position: absolute;
+    bottom: 360px; /* Adjust the distance from the bottom */
+    left: 38%; /* Align to the center horizontally */
+    transform: translateX(-50%); /* Move it back by half of its own width */
+    width: 80px;
+    height: 80px;
+    border-radius: 80px;
+    background-color: rgb(164, 33, 197);
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.per button {
+    background: none;
+    border: none;
+    color: white;
+    font-size: inherit;
+    cursor: pointer;
+    padding: 0;
+}
+.hash{
+    position: absolute;
+    bottom: 5px; /* Adjust the distance from the bottom */
+    left: 14%; /* Align to the center horizontally */
+    transform: translateX(-50%); /* Move it back by half of its own width */
+    width: 80px;
+    height: 80px;
+    border-radius: 80px;
+    background-color: rgb(164, 33, 197);
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.hash button {
+    background: none;
+    border: none;
+    color: white;
+    font-size: inherit;
+    cursor: pointer;
+    padding: 0;
+}
+.del{
+    position: absolute;
+    bottom: 360px; /* Adjust the distance from the bottom */
+    left: 62%; /* Align to the center horizontally */
+    transform: translateX(-50%); /* Move it back by half of its own width */
+    width: 80px;
+    height: 80px;
+    border-radius: 80px;
+    background-color: rgb(164, 33, 197);
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.del button {
+    background: none;
+    border: none;
+    color: white;
+    font-size: inherit;
+    cursor: pointer;
+    padding: 0;
+}
